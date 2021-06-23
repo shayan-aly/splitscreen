@@ -1,0 +1,94 @@
+.conatner-1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.txt{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 1;
+}
+.hr{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 10%;
+    border: 2px solid white;
+    z-index: 1;
+    transform: translateX(-50%);
+   
+}
+
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.split.left{
+    left: 0;
+    background: url(../img/14.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.alpha-left{
+    background-color: rgb(20 17 180 / 50%);
+}
+.split.right{
+    right: 0;
+    background: url(../img/12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.alpha-right{
+    background-color: rgb(180 137 17 / 51%);
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.btn{
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    font-weight: bold;
+    transform: translateX(-50%);
+
+}
+
+.btn-right:hover{
+    background-color: rgb(180 137 17);
+    color: white;
+}
+.btn-left:hover{
+    background-color:  rgb(20 17 180);
+    color: white;
+}
+
+.hoverLeft .left {
+    width: 70%;
+}
+.hoverLeft .right {
+    width: 30%;
+}
+.hoverRight .right {
+    width: 70%;
+}
+.hoverRight .left {
+    width: 30%;
+}
+
+.split.left , .split.right{
+    transition: all 1000ms ease-in;
+}
